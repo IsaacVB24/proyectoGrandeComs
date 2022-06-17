@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Mockup Zoom</title>
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/zoom.css" rel="stylesheet">
+<script type="text/javascript" src="../js/quizZoom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--
+    <br><br><br>
+    <h1>Sección: Aprendamos a crear una nueva reunión</h1>
+    <br><br><br>
+    -->
+
+    <div id="mensaje">
+    </div>
+    <!--Mockup Nueva Reuinón-->
+    <div id="contenidoZoom">
+        <div class="encabezado">
+            <div>
+                <p>Reunión y Chat</p>
+            </div>
+        </div>
+
+
+        <div class="botonesContenido">
+            <div>
+                <button class="boton" id="reunion" onclick="respCorrectaNuevaReunion()">
+                        <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Nueva reunión</p>
+                </button>
+                <button class="boton" onclick="respIncorrecta()">
+                    <a href="#">
+                        <img src="../img/unirseChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Unirse</p>
+                    </a>
+                </button>
+            </div>
+            <div>
+                <button class="boton">
+                    <a href="#">
+                        <img src="../img/programarChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Programar</p>
+                    </a>
+                </button>
+                <button class="boton">
+                    <a href="#">
+                        <img src="../img/compartirPantallaChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Compartir</p>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <table>
+                <tr>
+                    <td class="botonesMenu"><p>Reunión y Chat</p></td>
+                    <td class="botonesMenu"><p>Reuniones</p></td>
+                    <td class="botonesMenu"><p>Contactos</p></td>
+                    <td class="botonesMenu"><p>Más</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    
+    <!--Mockup Ajustes Nueva Reuinón-->
+    <div id="fondoNuevaReunion">
+        <div class="encabezadoLlamada">
+            <div>
+                <a onclick="cancelar()"><p id="cancelar">Cancelar</p></a>
+                <p>Iniciar una reunión</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div>
+            <table class="tablaNuevaReunion">
+                <tr>
+                    <th class="fila">
+                        <p>Video activado</p>
+                    </th>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round" style="border: 1px solid black;"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fila">
+                        <p>Usar ID personal de la reunión (PMI)</p>
+                    </th>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round" style="border: 1px solid black;"></span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <button class="iniciarReunion">Iniciar una reunión</button>
+        </div>
+    </div>
+
+</body>
+</html>
