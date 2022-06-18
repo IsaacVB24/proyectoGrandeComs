@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="../css/zoom.css" rel="stylesheet">
-<script type="text/javascript" src="../js/quizZoom.js"></script>
+<script type="text/javascript" src="../js/herramientasBasicasZoom.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
@@ -21,6 +21,8 @@
 
     <div id="mensaje">
     </div>
+
+    <br><br><br><center>Mockup Nueva Reuinón</center> 
     <!--Mockup Nueva Reuinón-->
     <div id="contenidoZoom">
         <div class="encabezado">
@@ -75,6 +77,7 @@
 
 
     
+    <br><br><br><center>Mockup Ajustes Nueva Reuinón</center> 
     <!--Mockup Ajustes Nueva Reuinón-->
     <div id="fondoNuevaReunion">
         <div class="encabezadoLlamada">
@@ -115,6 +118,50 @@
 
         <div>
             <button class="iniciarReunion">Iniciar una reunión</button>
+        </div>
+    </div>
+
+
+    <!--Mockup llamada iniciada-->
+    <br><br><br><center>Mockup llamada iniciada</center> 
+    <div id="llamadaEnCurso">
+        <div class="cabezeraLlamadaEnCurso">
+            <table style="width: 100%;">
+                <tr>
+                    <td><img src="../img/speakerActivo.png" alt="speakerActivo" class="imgLlamadaEnCurso" id="speaker" onclick="desactivarAudio()"></td>
+                    <td><p class="textoLlamadaEnCurso" style="cursor: context-menu;">Zoom</p></td>
+                    <td><button id="finalizarLlamada">Finalizar</button></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="contenidoLlamada">
+            <h2 id="warning">Tu video y tu audio NO se activarán realmente</h2>
+        </div>
+
+
+        <div class="botonesLlamada">
+            <table style="cursor: pointer;">
+                <tr>
+                    <td onclick="activarMicrofono()" id="microfono"><img src="../img/microfonoInactivo.png" alt="microfonoActivo" class="imagenMenuLlamada" id="imgAudio"></td>
+
+                    <td onclick="activarVideo()" id="video"><img src="../img/videoInactivo.png" alt="videoActivo" class="imagenMenuLlamada" id="imgVideo"></td>
+
+                    <td onclick="compartirPantalla()" id="compartirPantalla"><img src="../img/compartitPantalla.png" alt="compartirPantalla" class="imagenMenuLlamada" id="imgCompartir"></td>
+                    
+                    <td onclick="activarMicrofono()" id="microfono"><img src="../img/personasEnReunion.png" alt="personasEnReunion" class="imagenMenuLlamada" id="imgParticipantes"></td>
+                    
+                    <td onclick="activarMicrofono()" id="microfono"><img src="../img/iconoMas.png" alt="iconoMas" class="imagenMenuLlamada" id="imgMas"></td>
+                </tr>
+                <tr>
+                    <td class="textoMenuLlamada" id="activarAudio" onclick="activarMicrofono()">Activar audio</td>
+                    <td class="textoMenuLlamada" id="activarVideo" onclick="activarVideo()">Iniciar video</td>
+                    <td class="textoMenuLlamada" id="compartir">Compartir</td>
+                    <td class="textoMenuLlamada" id="participantes">Participantes</td>
+                    <td class="textoMenuLlamada" id="mas">Más</td>
+                </tr>
+            </table>
         </div>
     </div>
 

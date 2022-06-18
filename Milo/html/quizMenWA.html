@@ -39,7 +39,7 @@
 
     </head>
 	<body>
-		<div id="mensaje">
+		<div id="mensaje" class="h-center">
 			Mensaje
 		</div>
 		<!-- HEADER -->
@@ -151,87 +151,55 @@
 			</div>
 			<!-- /container -->
 		</div>
-		<!-- /SECTION -->
+	<!-- /SECTION -->
 
-		
-        <center> <h1 id="preguntaReunion">¿Cómo creamos una nueva reunión?</h1> </center>
-	    <br>
-	    <BR><h3 id="textoReunion"><center>Seleccione el icono correto</center></h3></BR>
-    
+	<center> <h3 id = "pwa1"> Luego de abrir WhatsApp</h3> </center>
+	<center> <h1 id= "pwa2">¿Dónde debemos tocar para enviar un nuevo mensaje?</h1> </center>
+	<br>
+	<BR><h3 id="textoReunion"><center>Da click en los elementos correctos</center></h3></BR>
 	
-	
-	
-	
+	<center><a id = "fin" href = "index.html"> Regresar al menu principal</a><center>
+
 	<!--Quiz Crear nueva reunión-->
-	<div id="contenidoZoom">
+	<div class = "contenidoWA" id = "q1">
         <div class="encabezado">
             <div>
-                <p>WhatsApp<img src = "../img/WASearch.PNG"></p>
+                <p>WhatsApp</p>
+				<img src = "../img/WASearch.PNG" onclick="respIncorrecta()">
+				<img src = "../img/WABar.PNG" onclick="respIncorrecta()">
             </div>
         </div>
 
         <div class="botonesContenido">
-            <div>
-                <button class="boton" id="reunion" value = "Click me" onclick = "respCorrectaNuevaReunion()">
-                        <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Nueva reunión</p>
+			<div>
+				<button class="WAMensaje" value = "Tu contacto" onclick = "respCorrecta()">
                 </button>
                 
             </div>
-            <div>
-                <button type="button" class="boton" value = "Click me" onclick = "respIncorrecta()">
-                        <img src="../img/programarChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Programar</p>
-                </button>
-                <button class="boton" value = "Click me" onclick = "respIncorrecta()">
-                        <img src="../img/compartirPantallaChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Compartir</p>
-                </button>
-            </div>
+		</div>
+		
+		<button class= "WAMensajeIcon" onclick="respIncorrecta()"> </button>
+		
+		
+    </div>
+
+	<div class = "contenidoWA" id = "q2">
+		
+		<div class="encabezado">
+			<img src = "../img/WAPerson.PNG">
+        </div>
+
+		
+		<div style = "position: relative; top: 70%;">
+			<p class = "WAMessage" id= "WAMessage"> Holaaaaaaaaaaaaaaaaaaaaaaaa</p>
+			<input type="text" class = "WAText" id ="WAText" placeholder="Enviar un mensaje...">
+			<button class = "send" onclick="sendText()" ></button>
 		</div>
 
-
-        <div class="menu">
-		
-            <table>
-                <tr>
-                    <td class="botonesMenu" ><p>Reunión y Chat</p></td>
-                    <td class="botonesMenu"><p>Reuniones</p></td>
-                    <td class="botonesMenu"><p>Contactos</p></td>
-                    <td class="botonesMenu"><p>Más</p></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-<!--Fin quiz zoom-->
-
-	<center> <h1>¿El ícono correcto para compartir pantalla es de color verde?</h1> </center>
-	   <br>
-	   <BR><h3><center>Seleccione verdadero o falso</center></h3></BR>
-	
-	<!--Inicio quiz compartir pantalla-->
-	   <div class="contenidoZoom2">
-        <div class="encabezado">
-            <div>
-                <p>Zoom</p>
-            </div>
-        </div>
-		<BR></BR><br><br>
-			<center><img src="../img/logo2ch.png"  alt=""> </center>
-<br><br><br><br><br><br><br>
-           <center><img src="../img/quiz_share.png"  alt=""> </center>
-		   <br>
-		   <br>
-		   <div class="radio">
-			<input type="radio" value = "Click me" onclick = "respCorrecta()" name="fav_language">
-			<label  ><h3>Verdadero</h3></label><br>
-			<input type="radio" value = "Click me" onclick = "respIncorrecta()"  name="fav_language">
-			<label ><H3>Falso</H3></label>
-			<br><br>
-		   </div>
-		   <br><br>
-
 	</div>
+	
+	
+<!--Fin quiz zoom-->
 
 		<br><br>
 

@@ -10,6 +10,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0 0 10px;
 }
+.logo2{
+  left: 8000px;
+}
 
 a {
   color: #2B2D42;
@@ -585,6 +588,9 @@ textarea.input {
 
 .main-nav>li+li, #pagActual {
   margin-left: 30px
+}
+#pagActual{
+  cursor: context-menu;
 }
 
 .main-nav>li>a, #pagActual {

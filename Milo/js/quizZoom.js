@@ -49,6 +49,7 @@ function quizCompletado(){
 //    document.getElementById("fondoNuevaReunion").innerHTML = "";
     $("#fondoNuevaReunion").fadeOut(1000);
     $("#textoReunion").fadeOut(1000);
+    $("#texto2Reunion").fadeOut(1000);
     document.getElementById("preguntaReunion").style.textDecoration = "line-through";
     document.getElementById("preguntaReunion").innerHTML = "¿Cómo creamos una nueva reunión? (COMPLETADO)";
     quiz1 = quiz1 + 1;
@@ -73,7 +74,7 @@ function acabarTodoElQuiz(){
     if(quiz1 == 1 & quiz2 == 1){
         document.getElementById("preguntaReunion").style.display = "none";
         document.getElementById("preguntaCompPantalla").style.textDecoration = "initial";
-        document.getElementById("preguntaCompPantalla").innerHTML = "¡Felicidades! Completaste todos los Quizes de esta sección.<br><br><table style='font-weight: initial; font-size: large;'><tr><td><button onclick='recargar();'>Repetir Quizes</button></td><td><button style='margin-left:1%;'><a href'../html/index.html'>Regresar al menú principal</a></button></td></tr></table>";
+        document.getElementById("preguntaCompPantalla").innerHTML = "¡Felicidades! Completaste todos los Quizes de esta sección.<br><br><table style='font-weight: initial; font-size: large;'><tr><td><button onclick='recargar();' href='../html/quizZoom.html' style='margin-left:5%;border-radius: 20px;'>Repetir Quiz</button></td><td><button style='margin-left:5%;border-radius: 20px;'><a sytle = '  ' href='../html/index.html'>Regresar al menú principal</a></button></td></tr></table>";
     }
 }
 function recargar(){

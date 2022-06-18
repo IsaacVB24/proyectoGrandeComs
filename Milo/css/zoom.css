@@ -266,3 +266,67 @@ input:checked + .slider:before {
     background-color: #e8caca;
     border: 2px solid #863d3d;
 */
+
+#llamadaEnCurso{
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+    height: 42rem;
+    position: static;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-bottom: 6rem;
+    background-color: black;
+}
+/*
+.cabezeraLlamadaEnCurso{
+    border: 1px solid white;
+}
+*/
+.imgLlamadaEnCurso{
+    width: 3rem;
+    margin-left: 20%;
+    margin-top: 3%;
+    padding: 0px;
+    float: left;
+    cursor: pointer;
+}
+.textoLlamadaEnCurso{
+    color: white;
+    margin-left: 15px;
+}
+#finalizarLlamada{
+    border-radius: 5px;
+    background-color: #e61818;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contenidoLlamada{
+    height: 32rem;
+    background-image: url(../img/logo2ch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10rem;
+    background-color: rgb(41, 41, 41);
+    /*BORRAR SIGUIENTE ESTILO:
+    border: 1px solid white;*/
+}
+.textoMenuLlamada{
+    color: white;
+    padding-left: 3px;
+    font-size: xx-small;
+    padding-right: 3px;
+}
+.imagenMenuLlamada{
+    width: 20px;
+    padding-top: 10px;
+}
+#warning{
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    font-size: medium;
+}
