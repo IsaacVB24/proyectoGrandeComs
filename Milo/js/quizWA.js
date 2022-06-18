@@ -30,8 +30,6 @@ function respCorrecta(){
     q1.innerHTML = "¡Perfecto!, ahora que abriste el contacto..."
     q2.innerHTML = "¿Qué mensaje le quieres mandar?"
 
-    let 
-
     return;
 }
 
